@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --color-main: rgb(29, 29, 29);
+    --color-darker: rgb(15, 15, 15);
+    --color-lighter: rgb(51, 51, 51);
+    --color-white: rgb(255, 255, 255);
+    --color-purple: rgb(103, 31, 162);
+    --color-violet: rgb(127, 58, 183);
+    --color-pink: rgb(255, 113, 161);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 21px;
+    color: var(--color-white);
+}
+
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+
+body{
+    width: 100vw;
+    background-color: var(--color-main);
+}
+
+/* Navbar Start */
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-darker);
+}
+
+ul.navbar-links{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+li.navbar-item{
+    padding: .25rem;
+}
+
+li.navbar-item > a{
+    padding: .2rem;
+    font-weight: 600;
+}
+/* Navbar End */
+
+/* Header Start */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-main);
+}
+.header-title{
+    padding: 1rem;
+    padding-bottom: .5rem;
+}
+
+header > p{
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+}
+/* Header Start */
+
+/* Homepage Start */
+.homepage-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.bio-containor{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.profile-pic-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-pic{
+    width: 60%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.bio-title{
+    padding-bottom: 1rem;
+}
+
+.bio-text{
+    padding-bottom: 1rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.nav-card{
+    text-align: center;
+    padding: .5rem;
+    border-radius: 8px;
+    background-color: var(--color-darker);
+    width: 90%;
+}
+/* Homepage End */
+
+/* Projects Page Start Here */
+.projects-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projects-title{
+    padding: 2rem;
+}
+.projects-article-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+}
+.projects-article{
+    padding: .5rem;
+    text-align: center;
+    background-color: var(--color-darker);
+    border-radius: 16px;
+    width: 70%;
+}
+.projects-article h2, p{
+    padding: .5rem;
+}
+.nonprogramming-projects-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow-y: hidden;
+    width: 90%;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.slideshow-container{
+    width: 40%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-wrapper {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    position: relative;
+    animation: slideshow 20s infinite;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+}
+.slide-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slideshow-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: .5rem;
+    width: 60%;
+}
+
+@keyframes slideshow {
+    0% { left: 0; }
+    10% { left: 0; }
+    15% { left: -100%; }
+    25% { left: -100%; }
+    30% { left: -200%; }
+    40% { left: -200%; }
+    45% { left: -300%; }
+    55% { left: -300%; }
+    60% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -100%; }
+    85% { left: -100%; }
+    90% { left: 0%; }
+}
+/* Projects Page Ends Here */
+
+/* CV Page Starts Here */
+
+.cv-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-main);
+    padding: 1rem 15%;
+}
+
+.cv-info{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-main);
+    padding: 1rem;
+    width: 100%;
+    gap: 2rem;
+}
+
+dl{
+    padding: 1rem;
+    background-color: var(--color-darker);
+    border-radius: 24px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+/* CV Page Ends Here */
+
+/* Text Effect Start */
+.text-effect{
+    animation: text-animation 3s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--color-purple),
+        var(--color-violet),
+        var(--color-pink),
+        var(--color-purple)
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes text-animation {
+    from{
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200%;
+    }
+}
+/* Text Effect End */
+
+/* Mediaquerry Start */
+@media screen and (min-width: 720px){
+    ul.navbar-links{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        padding: .5rem;
+    }
+    .homepage-container{
+        padding: 1rem 15%;
+    }
+
+    .profile-pic{
+        max-width: 30%;
+    }
+    .cards-container{
+        flex-direction: row;
+        gap: 3rem;
+    }
+    .nav-card{
+        width: 50%;
+    }
+    .nonprogramming-projects-container{
+        width: 60%;
+    }
+}
+/* Mediaquerry End */

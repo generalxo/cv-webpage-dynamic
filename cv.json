@@ -1,0 +1,95 @@
+[
+    {
+        "title": "Personal",
+        "cvInfo":[
+            {
+                "itemTitle": "Date of birth",
+                "itemYear": "1999/05/20",
+                "itemDescription": "Linköping, Sweden"
+            }
+        ]
+    },
+
+    {
+        "title": "Education",
+        "cvInfo":[
+            {
+                "itemTitle": "Elementry School year 1-4",
+                "itemYear": "2006 - 2010",
+                "itemDescription": "Primarschule Geeren, Bassersdorf, Switzerland"
+            },
+            {
+                "itemTitle": "Elementry School year 5",
+                "itemYear": "2010-2011",
+                "itemDescription": "Stenhamraskolan, Stenhamra, Sweden"
+            },
+            {
+                "itemTitle": "Middle School year 6-9",
+                "itemYear": "2011-2015",
+                "itemDescription": "Internationella Engelska Skolan, Bromma, Sweden"
+            },
+            {
+                "itemTitle": "High School year 1",
+                "itemYear": "2015-2016",
+                "itemDescription": "Ljud och Bild Skolan, Stockholm, Sweden"
+            },
+            {
+                "itemTitle": "High School year 2-3",
+                "itemYear": "2017-2020",
+                "itemDescription": "Inrikting Hantverk, Malungs Folkhögskola, Malugn, Sweden"
+            },
+            {
+                "itemTitle": "Higher Vocational Education",
+                "itemYear": "2020-2021",
+                "itemDescription": "Järnakademin, Kramforst, Sweden"
+            },
+            {
+                "itemTitle": "Programmering 1",
+                "itemYear": "2022",
+                "itemDescription": "Jensen Komvux, Stockholm, Sverige"
+            }
+        ]
+    },
+
+    {
+        "title": "Work Experience",
+        "cvInfo":[
+            {
+                "itemTitle": "Internship",
+                "itemYear": "2014",
+                "itemDescription": "Resturant, Slakteriaktiebolaget, Stockholm, Sweden"
+            },
+            {
+                "itemTitle": "Internship",
+                "itemYear": "2015",
+                "itemDescription": "Gym, Actic Fitness, Hagsätra, Sweden"
+            },
+            {
+                "itemTitle": "Summer job",
+                "itemYear": "2016",
+                "itemDescription": "Clearing Work, Färingsö Fastighet, Ekerö, Sweden"
+            },
+            {
+                "itemTitle": "Summer job",
+                "itemYear": "2017",
+                "itemDescription": "HVB-hem Ekerö Komun, Ekerö, Sweden"
+            },
+            {
+                "itemTitle": "Summer job",
+                "itemYear": "2019",
+                "itemDescription": "Reserv Warehouse Convotherm Elektrogeräte GmbH Welbilt, Egelfing, Germany"
+            }
+        ]
+    },
+
+    {
+        "title": "Other",
+        "cvInfo":[
+            {
+                "itemTitle": "Languages",
+                "itemYear": "Trilingual",
+                "itemDescription": "Swedish, German, English"
+            }
+        ]
+    }
+]
